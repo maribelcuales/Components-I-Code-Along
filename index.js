@@ -41,5 +41,12 @@
   // custom styles here
 }
 
+// Components: JavaScript:
+// - JavaScript is used to consume the data and output the content into the DOM. 
+// - We can use Javascript to consume the HTML and return a component version of it! 
+
+// JavaScript is the core component in the repeatable nature of components. Using a function and createElement, we can create unique components and add those to the DOM.
+
+
 
 
