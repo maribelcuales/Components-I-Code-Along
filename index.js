@@ -24,3 +24,22 @@
 // - are reusable pieces of code that can be used to build elements sharing functionality and styling. 
 //- Components are the heart of any dynamic web application and JavaScript framework.
 // A component is made of several parts: HTML, CSS, or JavaScript brought together for reuse in a website or application.
+
+
+// Components - HTML:
+// When building HTML with a component mentality, you need to ask the question: “What am I trying to display from my data?”
+
+
+// Components - CSS:
+// - Components should be modular or stand-alone.
+// - One way that can help you control your styles is to use a specificity chain that only matches up with your component. 
+// - Use a specific class name to accomplish this
+// - When using preprocessors (e.g less)
+
+@import custom-btn.less
+.custom-btn {
+  // custom styles here
+}
+
+
+
