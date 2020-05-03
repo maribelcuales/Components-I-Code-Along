@@ -75,7 +75,20 @@ const data = [
   
   // we created a new component for each item in the array and added it to the DOM.
   
-  
 
+
+  /////   .map    /////
+// - returns a new array with the items transformed (by our callback) 
+// - We can then do whatever we please with this array.
+
+let newComponents = data.map((arrayItem) => {
+    let newButton = buttonCreator(arrayItem);
+  
+    // Remember, we always need to return something when we use .map
+    return newButton;
+});
+
+
+  
 
 
