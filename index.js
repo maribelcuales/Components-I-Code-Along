@@ -48,5 +48,34 @@
 // JavaScript is the core component in the repeatable nature of components. Using a function and createElement, we can create unique components and add those to the DOM.
 
 
+/////   .forEach    /////
+// - is a simple way to iterate over the array, create components, and add them instantly to the DOM.
+
+const data = [
+    "Button One",
+    "Button Two",
+    "Button Three",
+    "Button Four"
+  ]
+  
+  function buttonCreator(buttonText){
+    const button = document.createElement('button');
+    button.textContent = buttonText;
+    button.classList.add('button');
+    button.addEventListener('click', (e) => {
+      console.log('clicked!');
+    });
+    return button;
+  }
+  
+  data.forEach((arrayItem) => {
+    let newButton = buttonCreator(arrayItem);
+    parent.appendChild(newButton);
+  });
+  
+  // we created a new component for each item in the array and added it to the DOM.
+  
+  
+
 
 
