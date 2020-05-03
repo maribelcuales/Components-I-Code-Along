@@ -89,6 +89,10 @@ let newComponents = data.map((arrayItem) => {
 });
 
 
-  
+// We can wait to add the components to the DOM, or we can manipulate them further, the sky is the limit! Let’s add them to the DOM now, using .forEach
+
+newComponents.forEach(component => {
+    parent.appendChild(component);
+});  
 
 
